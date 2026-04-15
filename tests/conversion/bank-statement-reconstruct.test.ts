@@ -23,6 +23,28 @@ test("reconstructBankStatementRows parses wrapped statement lines", () => {
   assert.equal(rows[2].deposit, "41,571,000.00");
 });
 
+test("reconstructBankStatementRows handles C/r split and glued date tokens", () => {
+  const rows = reconstructBankStatementRows([
+    "15-Dec-2025",
+    "NIP/251215124",
+    "2540045435099",
+    "87",
+    "TRANSACTION CHARGE-NIP IFO Abiola Nasiru Oyewumi F15-Dec-202553.75",
+    "23,267,321.11 C",
+    "r",
+    "17-Dec-2025EMT LEVY ON ACCOUNT ON 15-12-202517-Dec-202550.00",
+    "23,267,271.11 C",
+    "r",
+  ]);
+
+  assert.equal(rows.length, 2);
+  assert.equal(rows[0].date, "15-Dec-2025");
+  assert.equal(rows[0].withdrawal, "53.75");
+  assert.equal(rows[1].date, "17-Dec-2025");
+  assert.equal(rows[1].withdrawal, "50.00");
+  assert.equal(rows[1].balance, "23,267,271.11");
+});
+
 test("reconstructTables returns statement-shaped table", () => {
   const tokens: ExtractionToken[] = [
     {

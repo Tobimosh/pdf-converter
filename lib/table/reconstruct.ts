@@ -117,21 +117,27 @@ function parseStatementBlock(block: string, previousBalance: number | null): Sta
     return null;
   }
 
-  const dateMatch = compact.match(/^(\d{2}-[A-Za-z]{3}-\d{4})\s+/);
+  const dateMatch = compact.match(/^(\d{2}-[A-Za-z]{3}-\d{4})\s*/);
   if (!dateMatch) {
     return null;
   }
   const date = dateMatch[1];
   let rest = compact.slice(dateMatch[0].length).trim();
+  const footerIndex = rest.search(
+    /\b(Closing Balance:|For enquiries|Adhoc Customer Statement|Statement printed)\b/i,
+  );
+  if (footerIndex >= 0) {
+    rest = rest.slice(0, footerIndex).trim();
+  }
 
-  const balanceMatch = rest.match(/([0-9,]+\.\d{2})(?:\s*(Cr|Dr))?\s*$/i);
+  const balanceMatch = rest.match(/([0-9,]+\.\d{2})(?:\s*(?:Cr|Dr|C|D))?\s*$/i);
   if (!balanceMatch) {
     return null;
   }
   const balance = balanceMatch[1];
   rest = rest.slice(0, balanceMatch.index).trim();
 
-  const valueDateMatches = [...rest.matchAll(/\b\d{2}-[A-Za-z]{3}-\d{4}\b/g)];
+  const valueDateMatches = [...rest.matchAll(/\d{2}-[A-Za-z]{3}-\d{4}/g)];
   let valueDate = "";
   if (valueDateMatches.length > 0) {
     const last = valueDateMatches[valueDateMatches.length - 1];
@@ -205,7 +211,21 @@ function parseStatementBlock(block: string, previousBalance: number | null): Sta
 
 export function reconstructBankStatementRows(lines: string[]): StatementRow[] {
   const rows: StatementRow[] = [];
-  const cleanLines = lines.map(sanitizeStatementLine).filter((line) => !isPageNoise(line));
+  const cleanLines: string[] = [];
+
+  for (const sourceLine of lines) {
+    const line = sanitizeStatementLine(sourceLine);
+    if (!line) {
+      continue;
+    }
+    if (/^[rR]$/.test(line) && cleanLines.length > 0) {
+      cleanLines[cleanLines.length - 1] = `${cleanLines[cleanLines.length - 1]}r`;
+      continue;
+    }
+    cleanLines.push(line);
+  }
+
+  const filteredLines = cleanLines.filter((line) => !isPageNoise(line));
 
   let currentBlock = "";
   let previousBalance: number | null = null;
@@ -222,7 +242,7 @@ export function reconstructBankStatementRows(lines: string[]): StatementRow[] {
     currentBlock = "";
   };
 
-  for (const line of cleanLines) {
+  for (const line of filteredLines) {
     const opening = parseOpeningBalance(line);
     if (opening) {
       rows.push(opening);
@@ -237,7 +257,7 @@ export function reconstructBankStatementRows(lines: string[]): StatementRow[] {
       continue;
     }
 
-    const startsTransaction = statementDatePattern.test(line.split(" ")[0] ?? "");
+    const startsTransaction = /^(\d{2}-[A-Za-z]{3}-\d{4})/.test(line);
     if (startsTransaction) {
       flushBlock();
       currentBlock = line;
