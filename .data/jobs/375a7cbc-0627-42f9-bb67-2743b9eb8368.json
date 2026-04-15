@@ -1,0 +1,241 @@
+{
+  "id": "375a7cbc-0627-42f9-bb67-2743b9eb8368",
+  "fileName": "2586943015-17095047599_260414_123035.pdf",
+  "mimeType": "application/pdf",
+  "sizeBytes": 370404,
+  "createdAt": "2026-04-15T13:03:19.037Z",
+  "updatedAt": "2026-04-15T13:03:19.285Z",
+  "status": "succeeded",
+  "statusMessage": "Conversion finished.",
+  "inputPath": "/Users/mac/pdf-converter/.data/input/375a7cbc-0627-42f9-bb67-2743b9eb8368.pdf",
+  "warnings": [],
+  "outputPath": "/Users/mac/pdf-converter/.data/output/375a7cbc-0627-42f9-bb67-2743b9eb8368.xlsx",
+  "diagnostics": {
+    "durationsMs": {
+      "parse_pdf_ms": 178,
+      "classify_pages_ms": 0,
+      "extract_digital_ms": 1,
+      "extract_ocr_ms": 0,
+      "reconstruct_tables_ms": 15,
+      "write_xlsx_ms": 48
+    },
+    "lowConfidenceTableCount": 0,
+    "pageModes": [
+      {
+        "page": 1,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 2,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 3,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 4,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 5,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 6,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 7,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 8,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 9,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 10,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 11,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 12,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 13,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 14,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 15,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 16,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 17,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 18,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 19,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 20,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 21,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 22,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 23,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 24,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 25,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 26,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 27,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 28,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 29,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 30,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 31,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 32,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 33,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 34,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 35,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 36,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 37,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 38,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 39,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 40,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 41,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 42,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 43,
+        "mode": "digital",
+        "confidence": 0.89
+      }
+    ]
+  }
+}
