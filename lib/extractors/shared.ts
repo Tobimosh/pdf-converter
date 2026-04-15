@@ -13,6 +13,7 @@ export interface ParsedPdfDocument {
 }
 
 const pageMarkerPattern = /--\s*(\d+)\s+of\s+(\d+)\s*--/g;
+const repeatedTimestampPattern = /\d{1,2}\/\d{1,2}\/\d{2},\s*\d{1,2}:\d{2}\s*[AP]M/g;
 
 export function splitRawTextIntoPages(rawText: string, pageCount: number): string[] {
   const byFormFeed = rawText.split("\f");
@@ -22,6 +23,16 @@ export function splitRawTextIntoPages(rawText: string, pageCount: number): strin
 
   const markers = Array.from(rawText.matchAll(pageMarkerPattern));
   if (markers.length === 0) {
+    const timestampMarkers = Array.from(rawText.matchAll(repeatedTimestampPattern));
+    if (timestampMarkers.length >= pageCount) {
+      const pages = Array.from({ length: pageCount }, () => "");
+      for (let index = 0; index < pageCount; index += 1) {
+        const start = timestampMarkers[index]?.index ?? 0;
+        const end = timestampMarkers[index + 1]?.index ?? rawText.length;
+        pages[index] = rawText.slice(start, end).trim();
+      }
+      return pages;
+    }
     return [rawText];
   }
 

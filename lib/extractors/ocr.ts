@@ -19,6 +19,7 @@ export function extractOcrTokens(
 ): OcrExtractorOutput {
   const tokens: ExtractionToken[] = [];
   const warnings: ConversionWarning[] = [];
+  const emptyPages: number[] = [];
 
   for (const page of parsed.pages) {
     if (!allowedPages.has(page.page)) {
@@ -31,12 +32,7 @@ export function extractOcrTokens(
       .filter(Boolean);
 
     if (lines.length === 0) {
-      warnings.push({
-        code: "OCR_PAGE_EMPTY",
-        message: `OCR fallback did not produce text for page ${page.page}.`,
-        scope: `page:${page.page}`,
-        confidence: 0.25,
-      });
+      emptyPages.push(page.page);
       continue;
     }
 
@@ -54,13 +50,26 @@ export function extractOcrTokens(
     });
   }
 
-  warnings.push({
-    code: "OCR_FALLBACK_MODE",
-    message:
-      "OCR path currently uses text-layer fallback. Plug a dedicated OCR engine for production scanned-PDF accuracy.",
-    scope: "ocr_extractor",
-    confidence: 0.55,
-  });
+  if (emptyPages.length > 0) {
+    const preview = emptyPages.slice(0, 8).join(", ");
+    const suffix = emptyPages.length > 8 ? ", ..." : "";
+    warnings.push({
+      code: "OCR_PAGES_EMPTY_SUMMARY",
+      message: `OCR fallback produced no text on ${emptyPages.length} scanned pages (${preview}${suffix}).`,
+      scope: "ocr_extractor",
+      confidence: 0.25,
+    });
+  }
+
+  if (allowedPages.size > 0) {
+    warnings.push({
+      code: "OCR_FALLBACK_MODE",
+      message:
+        "OCR path currently uses text-layer fallback. Plug a dedicated OCR engine for production scanned-PDF accuracy.",
+      scope: "ocr_extractor",
+      confidence: 0.55,
+    });
+  }
 
   return { tokens, warnings };
 }

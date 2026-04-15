@@ -8,7 +8,6 @@ import type {
 
 const datePattern = /^\d{1,4}[-/]\d{1,2}[-/]\d{1,4}$/;
 const numericPattern = /^-?\d{1,3}(,\d{3})*(\.\d+)?$/;
-const statementDatePattern = /^\d{2}-[A-Za-z]{3}-\d{4}$/;
 const headerColumns = [
   "Date",
   "Reference",
