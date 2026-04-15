@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PDF To Excel Converter
 
-## Getting Started
+High-accuracy conversion foundation for mixed PDFs (digital + scanned) into `.xlsx`.
 
-First, run the development server:
+## Architecture
+
+- `app/api/convert/route.ts`: upload endpoint and job creation.
+- `app/api/jobs/[id]/route.ts`: job status endpoint with diagnostics/warnings.
+- `app/api/jobs/[id]/download/route.ts`: generated workbook download endpoint.
+- `lib/jobs/*`: file-backed job store + queue trigger.
+- `lib/pipeline/*`: extraction, classification, table reconstruction, and export flow.
+- `tests/conversion/*`: stage-level regression tests.
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000), upload a PDF, and wait for conversion completion.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quality Contract
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Targets and release gates are defined in `docs/quality-contract.md`.
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Optional settings:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `DATA_DIR` (default: `.data`)
+- `MAX_UPLOAD_MB` (default: `20`)
+- `MAX_PAGES` (default: `150`)
+- `LOW_CONFIDENCE_THRESHOLD` (default: `0.7`)
+- `JOB_RETENTION_HOURS` (default: `24`)
+- `RATE_LIMIT_WINDOW_MS` (default: `60000`)
+- `RATE_LIMIT_MAX_REQUESTS` (default: `12`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Testing
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm test
+pnpm lint
+```

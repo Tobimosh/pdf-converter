@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "description": "Representative corpus for PDF-to-Excel regression checks.",
+  "families": [
+    {
+      "id": "digital_invoices",
+      "description": "Digital PDF invoices with line-item tables."
+    },
+    {
+      "id": "bank_statements",
+      "description": "Statements with multi-row headers and merged bands."
+    },
+    {
+      "id": "scanned_forms",
+      "description": "Image-based PDFs with noise and skew."
+    },
+    {
+      "id": "financial_reports",
+      "description": "Dense multi-column tabular reports."
+    },
+    {
+      "id": "mixed_pages",
+      "description": "Documents containing digital and scanned pages."
+    },
+    {
+      "id": "edge_cases",
+      "description": "Blank pages, rotated pages, and annotation-heavy pages."
+    }
+  ]
+}

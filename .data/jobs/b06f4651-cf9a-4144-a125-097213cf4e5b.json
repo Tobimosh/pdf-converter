@@ -1,0 +1,500 @@
+{
+  "id": "b06f4651-cf9a-4144-a125-097213cf4e5b",
+  "fileName": "2586943015-17095047599_260414_123035.pdf",
+  "mimeType": "application/pdf",
+  "sizeBytes": 370404,
+  "createdAt": "2026-04-15T12:33:46.555Z",
+  "updatedAt": "2026-04-15T12:33:46.848Z",
+  "status": "succeeded",
+  "statusMessage": "Conversion finished.",
+  "inputPath": "/Users/mac/pdf-converter/.data/input/b06f4651-cf9a-4144-a125-097213cf4e5b.pdf",
+  "warnings": [
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 2.",
+      "scope": "page:2",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 3.",
+      "scope": "page:3",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 4.",
+      "scope": "page:4",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 5.",
+      "scope": "page:5",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 6.",
+      "scope": "page:6",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 7.",
+      "scope": "page:7",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 8.",
+      "scope": "page:8",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 9.",
+      "scope": "page:9",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 10.",
+      "scope": "page:10",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 11.",
+      "scope": "page:11",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 12.",
+      "scope": "page:12",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 13.",
+      "scope": "page:13",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 14.",
+      "scope": "page:14",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 15.",
+      "scope": "page:15",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 16.",
+      "scope": "page:16",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 17.",
+      "scope": "page:17",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 18.",
+      "scope": "page:18",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 19.",
+      "scope": "page:19",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 20.",
+      "scope": "page:20",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 21.",
+      "scope": "page:21",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 22.",
+      "scope": "page:22",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 23.",
+      "scope": "page:23",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 24.",
+      "scope": "page:24",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 25.",
+      "scope": "page:25",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 26.",
+      "scope": "page:26",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 27.",
+      "scope": "page:27",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 28.",
+      "scope": "page:28",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 29.",
+      "scope": "page:29",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 30.",
+      "scope": "page:30",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 31.",
+      "scope": "page:31",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 32.",
+      "scope": "page:32",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 33.",
+      "scope": "page:33",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 34.",
+      "scope": "page:34",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 35.",
+      "scope": "page:35",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 36.",
+      "scope": "page:36",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 37.",
+      "scope": "page:37",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 38.",
+      "scope": "page:38",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 39.",
+      "scope": "page:39",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 40.",
+      "scope": "page:40",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 41.",
+      "scope": "page:41",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 42.",
+      "scope": "page:42",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_PAGE_EMPTY",
+      "message": "OCR fallback did not produce text for page 43.",
+      "scope": "page:43",
+      "confidence": 0.25
+    },
+    {
+      "code": "OCR_FALLBACK_MODE",
+      "message": "OCR path currently uses text-layer fallback. Plug a dedicated OCR engine for production scanned-PDF accuracy.",
+      "scope": "ocr_extractor",
+      "confidence": 0.55
+    }
+  ],
+  "outputPath": "/Users/mac/pdf-converter/.data/output/b06f4651-cf9a-4144-a125-097213cf4e5b.xlsx",
+  "diagnostics": {
+    "durationsMs": {
+      "parse_pdf_ms": 170,
+      "classify_pages_ms": 0,
+      "extract_digital_ms": 1,
+      "extract_ocr_ms": 0,
+      "reconstruct_tables_ms": 7,
+      "write_xlsx_ms": 100
+    },
+    "lowConfidenceTableCount": 0,
+    "pageModes": [
+      {
+        "page": 1,
+        "mode": "digital",
+        "confidence": 0.89
+      },
+      {
+        "page": 2,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 3,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 4,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 5,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 6,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 7,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 8,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 9,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 10,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 11,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 12,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 13,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 14,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 15,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 16,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 17,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 18,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 19,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 20,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 21,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 22,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 23,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 24,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 25,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 26,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 27,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 28,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 29,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 30,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 31,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 32,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 33,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 34,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 35,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 36,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 37,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 38,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 39,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 40,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 41,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 42,
+        "mode": "scanned",
+        "confidence": 0.72
+      },
+      {
+        "page": 43,
+        "mode": "scanned",
+        "confidence": 0.72
+      }
+    ]
+  }
+}
